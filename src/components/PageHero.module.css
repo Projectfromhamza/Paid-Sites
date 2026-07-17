@@ -1,0 +1,60 @@
+.hero {
+  position: relative;
+  min-height: clamp(16rem, 38vh, 22rem);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  border-bottom: 1px solid color-mix(in srgb, var(--brass) 28%, transparent);
+}
+
+.compact {
+  min-height: clamp(12rem, 28vh, 16rem);
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+}
+
+.bgImg {
+  height: 100%;
+}
+
+.bgImg :global(img),
+.bgImg {
+  height: 100%;
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--steel) 35%, transparent), var(--steel) 92%),
+    linear-gradient(90deg, color-mix(in srgb, var(--steel) 70%, transparent), transparent 55%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-7) var(--space-6);
+}
+
+.content h1 {
+  font-size: var(--fs-2xl);
+  max-width: 18ch;
+  margin-top: var(--space-3);
+}
+
+.rule {
+  width: 6rem;
+  height: 2px;
+  color: var(--brass);
+  margin: var(--space-4) 0;
+  display: block;
+}
+
+.content p:last-child {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+  max-width: 36rem;
+}

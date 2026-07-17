@@ -1,0 +1,94 @@
+.footer {
+  background:
+    linear-gradient(180deg, transparent, color-mix(in srgb, var(--black) 55%, transparent)),
+    var(--steel-2);
+  border-top: 1px solid color-mix(in srgb, var(--brass) 25%, transparent);
+  margin-top: var(--space-9);
+  padding-top: var(--space-8);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+.brandCol {
+  max-width: 18rem;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.tag {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-top: 0.35rem;
+}
+
+.blurb {
+  margin-top: var(--space-4);
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.head {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: var(--space-4);
+  font-weight: 600;
+}
+
+.list,
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.list a,
+.meta a,
+.links a {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.list a:hover,
+.meta a:hover,
+.links a:hover {
+  color: var(--white);
+}
+
+.meta li {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.bottom {
+  border-top: 1px solid color-mix(in srgb, var(--brass) 18%, transparent);
+  padding: var(--space-4) 0;
+  font-size: var(--fs-xs);
+  color: var(--brass-dim);
+  letter-spacing: 0.06em;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  }
+}

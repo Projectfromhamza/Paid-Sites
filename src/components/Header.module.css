@@ -1,0 +1,287 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  background: color-mix(in srgb, var(--steel) 88%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--brass) 18%, transparent);
+  transition: background 0.3s ease;
+}
+
+.header.scrolled {
+  background: color-mix(in srgb, var(--steel) 97%, black);
+}
+
+.shell {
+  width: min(100% - 1.25rem, 1280px);
+  margin-inline: auto;
+}
+
+.callDesktop {
+  display: none;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: var(--header-h);
+  padding-block: 0.65rem;
+}
+
+.left,
+.right {
+  display: none;
+  gap: 1.1rem;
+  align-items: center;
+  flex: 1;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.right {
+  justify-content: flex-start;
+}
+
+.left a,
+.right a,
+.drawerNav a {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ash-dim);
+  position: relative;
+  padding-bottom: 0.15rem;
+  white-space: nowrap;
+}
+
+.left a:hover,
+.right a:hover,
+.drawerNav a:hover {
+  color: var(--white);
+}
+
+.left a.active,
+.right a.active,
+.drawerNav a.active {
+  color: var(--white);
+}
+
+.left a.active::after,
+.right a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--ember);
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65rem;
+  text-align: left;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.logoImg {
+  width: 2.35rem;
+  height: 2.35rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.brandName {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brandTag {
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 11rem;
+}
+
+.mobileActions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.callMobile {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  padding: 0.4rem 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--brass) 40%, transparent);
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.35rem;
+  background: none;
+  border: 1px solid color-mix(in srgb, var(--brass) 28%, transparent);
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: var(--ash);
+  transition: transform 0.3s var(--ease-out), opacity 0.3s ease;
+}
+
+.burgerOpen span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.drawer {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  background: var(--steel);
+  transform: translateX(100%);
+  transition: transform 0.4s var(--ease-out);
+  padding: 1.5rem 1.25rem 2rem;
+  border-top: 1px solid color-mix(in srgb, var(--brass) 20%, transparent);
+  overflow-y: auto;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.drawerCall {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--brass);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--brass) 20%, transparent);
+}
+
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drawerNav a {
+  font-size: 0.75rem;
+  padding: 0.35rem 0;
+}
+
+@media (min-width: 640px) {
+  .brandName {
+    font-size: 1.15rem;
+  }
+
+  .brandTag {
+    max-width: none;
+    font-size: 0.55rem;
+  }
+
+  .logoImg {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .shell {
+    width: min(100% - 2rem, 1280px);
+    padding-top: 0.35rem;
+  }
+
+  .callDesktop {
+    display: block;
+    text-align: right;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--brass);
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+  }
+
+  .bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    min-height: calc(var(--header-h) - 1.1rem);
+    padding-block: 0.4rem 0.7rem;
+  }
+
+  .left,
+  .right {
+    display: flex;
+  }
+
+  .brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+    justify-self: center;
+  }
+
+  .brandText {
+    align-items: center;
+  }
+
+  .mobileActions {
+    display: none;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  .logoImg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .brandName {
+    font-size: 1.2rem;
+  }
+}

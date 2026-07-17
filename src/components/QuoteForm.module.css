@@ -1,0 +1,111 @@
+.panel {
+  width: min(100%, 20rem);
+  background: color-mix(in srgb, #c4a882 90%, #1a1c1e);
+  border: 1px solid color-mix(in srgb, var(--steel) 55%, transparent);
+  padding: 0 0 0.85rem;
+  box-shadow: 0 14px 40px color-mix(in srgb, black 35%, transparent);
+}
+
+.head {
+  padding: 0.75rem 1rem 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--steel) 18%, transparent);
+  background: color-mix(in srgb, var(--walnut) 72%, #8a6248);
+}
+
+.headTitle {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cream-ink);
+}
+
+.headSub {
+  margin-top: 0.25rem;
+  font-size: 0.65rem;
+  color: color-mix(in srgb, var(--cream-ink) 75%, transparent);
+  line-height: 1.4;
+  max-width: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.85rem 0.85rem 0;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--white);
+  border: 1px solid color-mix(in srgb, var(--steel) 15%, transparent);
+  padding: 0 0.55rem;
+}
+
+.field input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.55rem 0;
+  font-size: 0.75rem;
+  color: var(--steel);
+  outline: none;
+}
+
+.field input::placeholder {
+  color: #8a8580;
+}
+
+.icon {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid var(--walnut);
+  flex-shrink: 0;
+}
+
+.area textarea {
+  width: 100%;
+  border: 1px solid color-mix(in srgb, var(--steel) 15%, transparent);
+  background: var(--white);
+  padding: 0.55rem;
+  font-size: 0.75rem;
+  color: var(--steel);
+  resize: vertical;
+  outline: none;
+  min-height: 3.75rem;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 0.1rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.58rem;
+}
+
+.secondary {
+  display: flex;
+  width: calc(100% - 1.7rem);
+  margin: 0.65rem auto 0;
+  text-align: center;
+  padding: 0.55rem 1rem;
+  font-size: 0.58rem;
+}
+
+.note {
+  font-size: 0.65rem;
+  color: var(--steel);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .panel {
+    width: min(100%, 22rem);
+  }
+
+  .field input,
+  .area textarea {
+    font-size: var(--fs-sm);
+  }
+}

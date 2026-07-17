@@ -1,0 +1,9 @@
+.main {
+  filter: none !important;
+  min-height: 60vh;
+}
+
+.stage {
+  opacity: 1;
+  filter: none !important;
+}

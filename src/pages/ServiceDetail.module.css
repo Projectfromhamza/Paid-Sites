@@ -1,0 +1,128 @@
+.detail {
+  padding: var(--space-7) 0 var(--space-8);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.main p {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+  margin-bottom: var(--space-4);
+  max-width: 40rem;
+}
+
+.media {
+  margin-bottom: var(--space-5);
+  border: 1px solid color-mix(in srgb, var(--brass) 25%, transparent);
+}
+
+.side {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+
+.card {
+  border: 1px solid color-mix(in srgb, var(--brass) 25%, transparent);
+  background: var(--steel-2);
+  padding: var(--space-4);
+}
+
+.card h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-3);
+}
+
+.card ul {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card li {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+  padding-left: 0.75rem;
+  border-left: 1px solid color-mix(in srgb, var(--brass) 50%, transparent);
+}
+
+.cta {
+  width: 100%;
+}
+
+.back {
+  font-size: var(--fs-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.back:hover {
+  color: var(--white);
+}
+
+.faq {
+  margin-top: var(--space-6);
+  border-top: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+  padding-top: var(--space-5);
+}
+
+.faq h3 {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-4);
+}
+
+.faq details {
+  border-bottom: 1px solid color-mix(in srgb, var(--brass) 18%, transparent);
+  padding: 0.85rem 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  color: var(--cream-ink);
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq details p {
+  margin: 0.65rem 0 0;
+}
+
+.more {
+  margin-top: var(--space-8);
+}
+
+.related {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.relatedItem {
+  border: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+  overflow: hidden;
+  background: var(--steel-2);
+}
+
+.relatedItem span {
+  display: block;
+  padding: 0.85rem 1rem;
+  font-size: var(--fs-sm);
+  color: var(--white);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.5fr 0.85fr;
+  }
+
+  .related {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,53 @@
+.plate {
+  display: grid;
+  background: color-mix(in srgb, var(--steel-3) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+  overflow: hidden;
+  transform-origin: center bottom;
+  transition: border-color 0.3s ease, transform 0.4s var(--ease-out);
+}
+
+.plate:hover {
+  border-color: color-mix(in srgb, var(--ember) 55%, var(--brass));
+  transform: translateY(-3px);
+}
+
+.media {
+  position: relative;
+}
+
+.index {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.18em;
+  color: var(--cream-ink);
+  background: color-mix(in srgb, var(--steel) 70%, transparent);
+  padding: 0.25rem 0.45rem;
+  z-index: 1;
+}
+
+.body {
+  padding: 1rem 1rem 1.15rem;
+  border-top: 1px solid color-mix(in srgb, var(--brass) 18%, transparent);
+}
+
+.body h3 {
+  font-size: var(--fs-lg);
+  margin-bottom: 0.4rem;
+}
+
+.body p {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+  margin-bottom: 0.75rem;
+}
+
+.more {
+  font-size: 0.625rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ember);
+  font-weight: 700;
+}

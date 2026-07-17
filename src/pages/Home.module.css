@@ -1,0 +1,364 @@
+.hero {
+  position: relative;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImg {
+  height: 100%;
+  min-height: 100%;
+}
+
+.heroImg :global(.wrap),
+.heroImg {
+  height: 100%;
+  min-height: 100%;
+}
+
+@media (min-width: 800px) {
+  .heroImg :global(.wrap),
+  .heroImg {
+    min-height: 100vh;
+  }
+}
+
+.heroVeil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--steel) 55%, transparent) 0%, color-mix(in srgb, var(--steel) 25%, transparent) 35%, color-mix(in srgb, var(--steel) 75%, transparent) 78%, var(--steel) 100%),
+    radial-gradient(ellipse at 70% 40%, color-mix(in srgb, var(--ember) 18%, transparent), transparent 50%);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: var(--space-5);
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+  flex: 1;
+  align-items: start;
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
+  justify-self: stretch;
+  width: 100%;
+  max-width: 22rem;
+}
+
+.listCta {
+  width: 100%;
+  text-align: center;
+}
+
+.carouselBridge {
+  position: relative;
+  z-index: 3;
+  margin-top: var(--space-4);
+  transform: none;
+  padding-inline: 0.75rem;
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .carouselBridge {
+    margin-top: auto;
+    transform: translateY(28%);
+    padding-inline: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.heroCopy {
+  max-width: 34rem;
+  padding-top: var(--space-4);
+}
+
+.script {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-md);
+  color: var(--brass);
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.heroCopy h1 {
+  font-size: var(--fs-hero);
+  font-weight: 500;
+  max-width: 14ch;
+}
+
+.heroCopy h1 span {
+  display: block;
+  font-size: 0.72em;
+  color: var(--cream-ink);
+  margin-top: 0.2em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: clamp(0.7rem, 1.4vw, 0.85rem);
+}
+
+.heroRule {
+  width: 7rem;
+  height: 2px;
+  color: var(--brass);
+  margin: var(--space-4) 0;
+  display: block;
+}
+
+.heroLead {
+  font-size: var(--fs-sm);
+  color: var(--ash);
+  max-width: 28rem;
+  line-height: 1.7;
+}
+
+.band {
+  padding-top: clamp(2.5rem, 10vw, 8rem);
+  padding-bottom: var(--space-8);
+  background:
+    linear-gradient(180deg, var(--steel), transparent 12%),
+    var(--band-texture, none) center / cover;
+  background-color: var(--steel-2);
+}
+
+.dual {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.dualCard {
+  display: grid;
+  border: 1px solid color-mix(in srgb, var(--brass) 28%, transparent);
+  background: color-mix(in srgb, var(--steel) 82%, transparent);
+  overflow: hidden;
+}
+
+.dualBody {
+  padding: var(--space-5);
+}
+
+.dualBody h2 {
+  font-size: var(--fs-xl);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.dualBody p {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+  margin-bottom: var(--space-5);
+}
+
+.featured {
+  padding: var(--space-8) 0;
+  background: var(--steel);
+}
+
+.rack {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.process {
+  padding: var(--space-8) 0;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--black) 40%, transparent), transparent),
+    var(--process-texture, none) center / cover;
+  background-color: #2a1f1a;
+  border-block: 1px solid color-mix(in srgb, var(--brass) 25%, transparent);
+}
+
+.steps {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+}
+
+.step {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+  background: color-mix(in srgb, var(--steel) 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+  padding: var(--space-4);
+}
+
+.stepNum {
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  color: var(--ember);
+  font-weight: 700;
+}
+
+.step h3 {
+  font-size: var(--fs-lg);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.step p {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.centerCta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-7);
+}
+
+.projects {
+  padding: var(--space-8) 0;
+}
+
+.projectGrid {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+}
+
+.project {
+  border: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+  background: var(--steel-2);
+  overflow: hidden;
+}
+
+.projectBody {
+  padding: var(--space-5);
+}
+
+.projectBody h3 {
+  font-size: var(--fs-lg);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.projectBody p:last-child {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.trust {
+  padding: var(--space-8) 0;
+  background: var(--steel-2);
+  border-block: 1px solid color-mix(in srgb, var(--brass) 22%, transparent);
+}
+
+.trustInner {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.trustInner h2 {
+  font-size: var(--fs-2xl);
+  max-width: 16ch;
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.trustInner > div > p:last-of-type {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.trustList {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.trustList li {
+  display: grid;
+  gap: 0.25rem;
+  padding-left: var(--space-4);
+  border-left: 1px solid var(--ember);
+}
+
+.trustList strong {
+  font-size: var(--fs-sm);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.trustList span {
+  font-size: var(--fs-sm);
+  color: var(--ash-dim);
+}
+
+.closing {
+  padding: var(--space-8) 0 var(--space-7);
+}
+
+.closingActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+@media (min-width: 800px) {
+  .heroInner {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+  }
+
+  .heroForm {
+    justify-self: end;
+  }
+
+  .dual {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step {
+    grid-template-columns: 7.5rem 1fr;
+  }
+
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trustInner {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .step {
+    grid-template-columns: 1fr;
+  }
+}
