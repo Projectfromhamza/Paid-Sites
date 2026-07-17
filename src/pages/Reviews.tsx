@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { reviews } from '../data/site'
@@ -28,7 +28,7 @@ export function Reviews() {
       <PageHero
         eyebrow="Reviews"
         title="What clients notice after install"
-        lead="Fit, finish, and how the two trades talk to each other—straight feedback from homes, shops, and site teams."
+        lead="Fit, finish, and how the two trades talk to each other-straight feedback from homes, shops, and site teams."
         image="/images/18-project-1.jpg"
       />
 

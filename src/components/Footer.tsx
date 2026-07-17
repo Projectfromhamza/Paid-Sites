@@ -11,7 +11,7 @@ export function Footer() {
           <p className={styles.tag}>{site.tagline}</p>
           <p className={styles.blurb}>
             Dual-trade workshop: structural and architectural welding alongside doors, windows,
-            cabinets, and custom joinery—measured, fabricated, and installed as one craft.
+            cabinets, and custom joinery-measured, fabricated, and installed as one craft.
           </p>
         </div>
 
@@ -44,9 +44,8 @@ export function Footer() {
             <li>
               <a href={site.phoneHref}>{site.phone}</a>
             </li>
-            <li>
-              <a href={`mailto:${site.email}`}>{site.email}</a>
-            </li>
+            <li>{site.city}</li>
+
             <li>{site.hours.weekdays}</li>
             <li>{site.hours.sunday}</li>
           </ul>

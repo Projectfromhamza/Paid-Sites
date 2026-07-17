@@ -1,14 +1,12 @@
-import { useEffect, useRef, type CSSProperties } from 'react'
+﻿import { useEffect, useRef, type CSSProperties } from 'react'
 import { Link } from 'react-router-dom'
 import { QuoteForm } from '../components/QuoteForm'
-import { OrbitCarousel } from '../components/OrbitCarousel'
 import { ServicePlate } from '../components/ServicePlate'
 import { SmartImage } from '../components/SmartImage'
 import { ReviewsStrip } from '../components/ReviewsStrip'
 import { img } from '../data/images'
 import {
   processSteps,
-  projects,
   site,
   weldingServices,
   woodServices,
@@ -21,13 +19,6 @@ import {
   sparksLine,
 } from '../lib/motion'
 import styles from './Home.module.css'
-
-const carouselSlides = [
-  { src: '/images/27-carousel-1.jpg', caption: 'Ornate steel gate' },
-  { src: '/images/28-carousel-2.jpg', caption: 'Hardwood double doors' },
-  { src: '/images/29-carousel-3.jpg', caption: 'Steel staircase frame' },
-  { src: '/images/30-carousel-4.jpg', caption: 'Custom wardrobe joinery' },
-]
 
 export function Home() {
   const hero = useRef<HTMLElement>(null)
@@ -68,8 +59,8 @@ export function Home() {
     }
   }, [])
 
-  const featuredWelding = weldingServices.slice(0, 3)
-  const featuredWood = woodServices.slice(0, 3)
+  const featuredWelding = weldingServices.slice(0, 2)
+  const featuredWood = woodServices.slice(0, 1)
 
   return (
     <>
@@ -95,7 +86,7 @@ export function Home() {
               <line data-spark x1="0" y1="1" x2="240" y2="1" stroke="currentColor" strokeWidth="1" />
             </svg>
             <p className={styles.heroLead} data-grain>
-              {site.subline} Gates, grills, railings, doors, windows, cabinets, and custom joinery—
+              {site.subline} Gates, grills, railings, doors, windows, cabinets, and custom joinery-
               measured, fabricated, and installed under one workshop.
             </p>
           </div>
@@ -108,9 +99,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className={styles.carouselBridge}>
-          <OrbitCarousel slides={carouselSlides} />
-        </div>
+
       </section>
 
       <section
@@ -120,12 +109,12 @@ export function Home() {
       >
         <div className={`container ${styles.dual}`}>
           <article className={styles.dualCard} data-plate>
-            <SmartImage src="/images/06-weld-gates.jpg" alt="Welding" aspect="16/9" tone="steel" />
+            <SmartImage src="/images/01-hero.jpg" alt="Welding" aspect="16/9" tone="steel" />
             <div className={styles.dualBody}>
               <p className="eyebrow">Trade one</p>
               <h2 data-grain>Welding</h2>
               <p data-grain>
-                Architectural and structural steel—gates that hang true, grills that keep light,
+                Architectural and structural steel. Gates that hang true, grills that keep light,
                 railings and staircases built for daily load. Repair and on-site welding when the
                 right fix is reinforcement, not replacement.
               </p>
@@ -135,7 +124,7 @@ export function Home() {
             </div>
           </article>
           <article className={styles.dualCard} data-plate>
-            <SmartImage src="/images/12-wood-doors.jpg" alt="Woodwork" aspect="16/9" tone="wood" />
+            <SmartImage src="/images/trade2-wood.jpg" alt="Woodwork" aspect="16/9" tone="wood" />
             <div className={styles.dualBody}>
               <p className="eyebrow">Trade two</p>
               <h2 data-grain>Wooden work</h2>
@@ -155,7 +144,7 @@ export function Home() {
         <div className="container">
           <h2 className="section-title">Featured craft</h2>
           <p className="section-lead">
-            Six openings into the work—three from the welding bay, three from the timber benches.
+            A glimpse into our work-steel from the welding bay, timber from the bench.
           </p>
           <div className={styles.rack}>
             {featuredWelding.map((s, i) => (
@@ -176,10 +165,14 @@ export function Home() {
                 title={s.title}
                 short={s.short}
                 image={s.image}
-                index={i + 3}
+                index={i + 2}
                 tone="wood"
               />
             ))}
+          </div>
+          <div className={styles.centerCta}>
+            <Link to="/welding" className="btn btn-outline">All welding</Link>
+            <Link to="/woodwork" className="btn btn-outline">All woodwork</Link>
           </div>
         </div>
       </section>
@@ -192,7 +185,7 @@ export function Home() {
         <div className="container">
           <h2 className="section-title">How a job moves</h2>
           <p className="section-lead">
-            Measure, design, fabricate, install—same sequence whether the material is steel, wood,
+            Measure, design, fabricate, install-same sequence whether the material is steel, wood,
             or both.
           </p>
           <div className={styles.steps}>
@@ -215,29 +208,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className={styles.projects}>
-        <div className="container">
-          <h2 className="section-title">Recent lines of work</h2>
-          <p className="section-lead">Selected projects that show how steel and timber share a site.</p>
-          <div className={styles.projectGrid}>
-            {projects.map((p) => (
-              <article key={p.title} className={styles.project}>
-                <SmartImage src={p.image} alt={p.title} aspect="16/9" tone="ember" />
-                <div className={styles.projectBody}>
-                  <p className="eyebrow">{p.trade}</p>
-                  <h3>{p.title}</h3>
-                  <p>{p.summary}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className={styles.centerCta}>
-            <Link to="/projects" className="btn btn-outline">
-              View projects
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       <ReviewsStrip />
 
@@ -250,7 +221,7 @@ export function Home() {
             <h2 data-wipe>One measure. Two trades. No handoff gaps.</h2>
             <p>
               When a gate meets a wooden door, or a steel stair needs hardwood treads, both pieces
-              are planned together—so clearances, finishes, and install days align.
+              are planned together-so clearances, finishes, and install days align.
             </p>
           </div>
           <ul className={styles.trustList}>

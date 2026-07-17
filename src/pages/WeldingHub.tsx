@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { ServicePlate } from '../components/ServicePlate'
@@ -24,7 +24,7 @@ export function WeldingHub() {
       <PageHero
         eyebrow="Welding"
         title="Steelwork that holds line and load"
-        lead="From compound gates to structural frames, every weld is planned for the opening it serves—then finished for the weather it will face."
+        lead="From compound gates to structural frames, every weld is planned for the opening it serves-then finished for the weather it will face."
         image="/images/08-weld-structural.jpg"
       />
 
@@ -34,8 +34,8 @@ export function WeldingHub() {
             <p className="eyebrow">In the bay</p>
             <h2 data-grain>Architectural presence. Structural honesty.</h2>
             <p data-grain>
-              Our welding shop builds pieces you see every day—gates, grills, railings—and pieces
-              you trust without noticing—brackets, stair stringers, canopy frames. Mild steel is
+              Our welding shop builds pieces you see every day-gates, grills, railings-and pieces
+              you trust without noticing-brackets, stair stringers, canopy frames. Mild steel is
               our primary language; finishes are chosen for exposure, not fashion alone.
             </p>
             <p data-grain>
@@ -61,7 +61,7 @@ export function WeldingHub() {
       <section className={styles.list}>
         <div className="container">
           <h2 className="section-title">Welding services</h2>
-          <p className="section-lead">Nine disciplined categories—open any for materials, scope, and answers.</p>
+          <p className="section-lead">Nine disciplined categories-open any for materials, scope, and answers.</p>
           <div className={styles.rack} ref={rack}>
             {weldingServices.map((s, i) => (
               <ServicePlate

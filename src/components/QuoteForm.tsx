@@ -17,11 +17,12 @@ export function QuoteForm({ animate = true }: { animate?: boolean }) {
     e.preventDefault()
     const data = new FormData(e.currentTarget)
     const name = String(data.get('name') || '')
-    const email = String(data.get('email') || '')
     const phone = String(data.get('phone') || '')
     const message = String(data.get('message') || '')
-    const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0A${message}`
-    window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(site.name + ' — Contact')}&body=${body}`
+    const text = encodeURIComponent(
+      `Hello ${site.name}!\n\nName: ${name}\nPhone: ${phone}\n\nMessage:\n${message}`
+    )
+    window.open(`https://wa.me/${site.whatsapp}?text=${text}`, '_blank')
     setSent(true)
   }
 
@@ -31,7 +32,7 @@ export function QuoteForm({ animate = true }: { animate?: boolean }) {
     <div className={styles.panel} ref={root}>
       <div className={styles.head}>
         <p className={styles.headTitle}>Contact</p>
-        <p className={styles.headSub}>Tell us what you need — we reply with next steps.</p>
+        <p className={styles.headSub}>Tell us what you need - we reply with next steps.</p>
       </div>
 
       <form className={styles.form} onSubmit={onSubmit}>
@@ -39,10 +40,7 @@ export function QuoteForm({ animate = true }: { animate?: boolean }) {
           <span className={styles.icon} aria-hidden />
           <input name="name" required placeholder="Your name" autoComplete="name" />
         </label>
-        <label className={styles.field} data-ledger>
-          <span className={styles.icon} aria-hidden />
-          <input name="email" type="email" required placeholder="Your email" autoComplete="email" />
-        </label>
+
         <label className={styles.field} data-ledger>
           <span className={styles.icon} aria-hidden />
           <input name="phone" type="tel" placeholder="Your phone (optional)" autoComplete="tel" />
@@ -56,13 +54,13 @@ export function QuoteForm({ animate = true }: { animate?: boolean }) {
           />
         </label>
         <button type="submit" className={`btn btn-ember ${styles.submit}`} data-ledger>
-          Send message
+          Send via WhatsApp
         </button>
-        {sent ? <p className={styles.note}>Opening your email client…</p> : null}
+        {sent ? <p className={styles.note}>Opening WhatsApp…</p> : null}
       </form>
 
       <a href={wa} className={`btn btn-walnut ${styles.secondary}`} target="_blank" rel="noreferrer">
-        WhatsApp us
+        WhatsApp us directly
       </a>
     </div>
   )

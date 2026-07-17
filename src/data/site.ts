@@ -1,13 +1,14 @@
-/** Site defaults — replace when business details are confirmed */
+/** Site defaults */
 export const site = {
-  name: 'Forge & Timber',
+  name: 'Zain Metal and Timber',
   tagline: 'Steel joined. Wood refined.',
   subline: 'Precision welding and fine woodwork for homes that demand both strength and finish.',
-  phone: '+92 300 0000000',
-  phoneHref: 'tel:+923000000000',
-  whatsapp: '923000000000',
-  email: 'hello@forgeandtimber.com',
-  address: 'Workshop Lane, Industrial Area — City, Pakistan',
+  phone: '+92(322)-4263264',
+  phoneHref: 'tel:+923224263264',
+  whatsapp: '923224263264',
+  address: 'Workshop Lane, Industrial Area - Lahore, Pakistan',
+  city: 'Lahore',
+  contactName: 'Junaid Javed',
   hours: {
     weekdays: 'Mon – Sat · 9:00 – 18:00',
     sunday: 'Sunday · By appointment',
@@ -63,7 +64,7 @@ export const weldingServices: ServiceItem[] = [
     image: '/images/06-weld-gates.jpg',
     body: [
       'A gate is the first handshake of a property. We design and fabricate mild-steel and ornamental gates that close cleanly, hang true, and take weather without warping.',
-      'From single swing leaves to double driveways and sliding tracks, every hinge plate, latch, and frame is measured to your opening—not adapted from a generic kit.',
+      'From single swing leaves to double driveways and sliding tracks, every hinge plate, latch, and frame is measured to your opening-not adapted from a generic kit.',
       'Finishes range from industrial primer to powder-coat colour matches so the metal sits correctly beside brick, stone, or timber cladding.',
     ],
     covers: [
@@ -93,7 +94,7 @@ export const weldingServices: ServiceItem[] = [
     image: '/images/07-weld-grills.jpg',
     body: [
       'Security should not turn a window into a cage. Our grill patterns balance bar spacing with sightlines so rooms keep daylight while openings stay protected.',
-      'We fabricate fixed, hinged, and detachable panels for apartments, houses, and shopfronts—with clean welds and frames that sit flush to masonry or timber surrounds.',
+      'We fabricate fixed, hinged, and detachable panels for apartments, houses, and shopfronts-with clean welds and frames that sit flush to masonry or timber surrounds.',
     ],
     covers: ['Fixed window grills', 'Hinged access panels', 'Shopfront security', 'Balcony protection mesh', 'Custom lattice patterns'],
     materials: ['Square & round bar', 'Flat plate accents', 'Anti-rust primer systems'],
@@ -101,7 +102,7 @@ export const weldingServices: ServiceItem[] = [
     faq: [
       {
         q: 'Will grills block emergency exit?',
-        a: 'We can specify hinged or quick-release sections where fire egress matters—discussed during site measure.',
+        a: 'We can specify hinged or quick-release sections where fire egress matters-discussed during site measure.',
       },
     ],
   },
@@ -120,7 +121,7 @@ export const weldingServices: ServiceItem[] = [
     faq: [
       {
         q: 'Can railings include wood tops?',
-        a: 'Yes—our woodwork team can mill and finish hardwood caps that bolt cleanly to the steel substructure.',
+        a: 'Yes-our woodwork team can mill and finish hardwood caps that bolt cleanly to the steel substructure.',
       },
     ],
   },
@@ -131,7 +132,7 @@ export const weldingServices: ServiceItem[] = [
     image: '/images/08-weld-structural.jpg',
     body: [
       'A staircase is architecture you walk on. We fabricate stringers, landings, and riser supports with checked rise-run geometry so every step feels even underfoot.',
-      'Open industrial stairs, closed risers for timber cladding, and spiral cores are all within scope—coordinated with your flooring and railing finish.',
+      'Open industrial stairs, closed risers for timber cladding, and spiral cores are all within scope-coordinated with your flooring and railing finish.',
     ],
     covers: ['Straight & L-shaped stairs', 'Spiral cores', 'Mezzanine access', 'Landing frames', 'Tread-ready stringers'],
     materials: ['Structural MS sections', 'Checker plate options', 'Primer for site finish'],
@@ -139,7 +140,7 @@ export const weldingServices: ServiceItem[] = [
     faq: [
       {
         q: 'Do you install timber treads?',
-        a: 'Yes. Welding and woodwork are under one roof—steel frame and hardwood treads can be delivered as a single package.',
+        a: 'Yes. Welding and woodwork are under one roof-steel frame and hardwood treads can be delivered as a single package.',
       },
     ],
   },
@@ -168,7 +169,7 @@ export const weldingServices: ServiceItem[] = [
     short: 'Beams, columns, brackets, and workshop steel cut and welded to drawing.',
     image: '/images/08-weld-structural.jpg',
     body: [
-      'When a project needs more than decorative metal, we fabricate structural members to engineer or architect drawings—with clear weld schedules and fit-up checks.',
+      'When a project needs more than decorative metal, we fabricate structural members to engineer or architect drawings-with clear weld schedules and fit-up checks.',
       'Brackets, lintel supports, mezzanine frames, and custom plates are produced with the same care as visible architectural steel.',
     ],
     covers: ['Beams & columns', 'Brackets & base plates', 'Mezzanine frames', 'Custom plates & cleats'],
@@ -184,7 +185,7 @@ export const weldingServices: ServiceItem[] = [
   {
     slug: 'furniture-frames',
     title: 'Furniture Frames',
-    short: 'Metal skeletons for tables, benches, and shelving—ready for wood or stone tops.',
+    short: 'Metal skeletons for tables, benches, and shelving-ready for wood or stone tops.',
     image: '/images/09-weld-custom.jpg',
     body: [
       'Furniture that lasts starts with a true frame. We weld table bases, bench frames, and shelving uprights with level pads and clean miters.',
@@ -196,18 +197,18 @@ export const weldingServices: ServiceItem[] = [
     faq: [
       {
         q: 'Can frames be powder coated black?',
-        a: 'Yes—matte black and custom RAL colours are available depending on batch size.',
+        a: 'Yes-matte black and custom RAL colours are available depending on batch size.',
       },
     ],
   },
   {
     slug: 'repair',
     title: 'Repair & On-Site Welding',
-    short: 'Gates that sag, railings that rust, frames that crack—restored where they stand.',
+    short: 'Gates that sag, railings that rust, frames that crack-restored where they stand.',
     image: '/images/10-weld-repair.jpg',
     body: [
       'Not every job starts in the workshop. Our mobile welding covers hinge resets, cracked joints, rusted sections, and reinforcement of tired steel.',
-      'We cut out failed metal, reweld sound sections, and refinish the repair zone so the piece works again without full replacement—when that is the smarter path.',
+      'We cut out failed metal, reweld sound sections, and refinish the repair zone so the piece works again without full replacement-when that is the smarter path.',
     ],
     covers: ['Gate realignment', 'Hinge & latch repair', 'Railing reinforcement', 'Crack welding', 'Section replacement'],
     materials: ['Matching electrodes', 'Primer touch-up systems'],
@@ -222,7 +223,7 @@ export const weldingServices: ServiceItem[] = [
   {
     slug: 'custom-metal',
     title: 'Custom Metalwork',
-    short: 'One-off pieces—screens, planters, brackets, and sculptural accents.',
+    short: 'One-off pieces-screens, planters, brackets, and sculptural accents.',
     image: '/images/09-weld-custom.jpg',
     body: [
       'When the drawing is yours alone, we translate sketches into cut lists and welds. Custom screens, fireplace surrounds, planter frames, and art brackets are everyday work here.',
@@ -244,11 +245,11 @@ export const woodServices: ServiceItem[] = [
   {
     slug: 'doors',
     title: 'Doors',
-    short: 'Solid and engineered doors—main entrances, interiors, and double leaves.',
+    short: 'Solid and engineered doors-main entrances, interiors, and double leaves.',
     image: '/images/12-wood-doors.jpg',
     body: [
       'A door carries traffic, weather, and first impressions. We build and finish hardwood and engineered doors sized to your frame, with correct clearances for local climate swell.',
-      'Panelled classics, flush modern faces, and glazed inserts are available—paired with our welding team when steel frames or security hardware are part of the opening.',
+      'Panelled classics, flush modern faces, and glazed inserts are available-paired with our welding team when steel frames or security hardware are part of the opening.',
     ],
     covers: ['Main entrance doors', 'Interior room doors', 'Double / French leaves', 'Glazed panels', 'Fire-rated style builds on request'],
     materials: ['Teak, ash, oak & local hardwoods', 'Engineered cores', 'Varnish / polish / paint systems'],
@@ -256,7 +257,7 @@ export const woodServices: ServiceItem[] = [
     faq: [
       {
         q: 'Do you supply frames with doors?',
-        a: 'Yes—door and frame packages ensure hinge alignment and consistent reveal lines.',
+        a: 'Yes-door and frame packages ensure hinge alignment and consistent reveal lines.',
       },
     ],
   },
@@ -286,7 +287,7 @@ export const woodServices: ServiceItem[] = [
     image: '/images/16-wood-frames.jpg',
     body: [
       'Frames decide whether a door swings free or binds forever. We mill and install frames with plumbed jambs and consistent head heights across a floor.',
-      'Architraves and skirt interfaces are cut to hide transitions between plaster, tile, and timber—clean lines, not filler gaps.',
+      'Architraves and skirt interfaces are cut to hide transitions between plaster, tile, and timber-clean lines, not filler gaps.',
     ],
     covers: ['Door frames', 'Window frames', 'Architraves', 'Skirting interfaces'],
     materials: ['Hardwood & softwood as specified', 'Moisture-aware sealers'],
@@ -294,7 +295,7 @@ export const woodServices: ServiceItem[] = [
     faq: [
       {
         q: 'Can frames be painted or stained?',
-        a: 'Both. We prime for paint systems or stain to show grain—your choice per room.',
+        a: 'Both. We prime for paint systems or stain to show grain-your choice per room.',
       },
     ],
   },
@@ -305,7 +306,7 @@ export const woodServices: ServiceItem[] = [
     image: '/images/14-wood-cabinets.jpg',
     body: [
       'Storage fails when boxes are out of square. We build kitchen cabinets, wardrobes, and utility units with calibrated carcasses, adjustable shelving, and hardware that survives daily use.',
-      'Layouts respect plumbing, electrical, and appliance clearances—measured on site, not guessed from a brochure.',
+      'Layouts respect plumbing, electrical, and appliance clearances-measured on site, not guessed from a brochure.',
     ],
     covers: ['Kitchen cabinets', 'Wardrobes', 'TV & display units', 'Utility cupboards'],
     materials: ['Plywood / MDF / hardwood faces', 'Laminate or polish', 'Soft-close hardware'],
@@ -313,14 +314,14 @@ export const woodServices: ServiceItem[] = [
     faq: [
       {
         q: 'Do you handle island units?',
-        a: 'Yes—including coordination with steel brackets or bases when spans need reinforcement.',
+        a: 'Yes-including coordination with steel brackets or bases when spans need reinforcement.',
       },
     ],
   },
   {
     slug: 'furniture',
     title: 'Custom Furniture',
-    short: 'Tables, beds, benches, and pieces designed for your room—not a showroom aisle.',
+    short: 'Tables, beds, benches, and pieces designed for your room-not a showroom aisle.',
     image: '/images/15-wood-furniture.jpg',
     body: [
       'Furniture should fit the wall it lives against. We design and build tables, beds, consoles, and seating to your dimensions, with joinery chosen for the load each piece will see.',
@@ -358,7 +359,7 @@ export const woodServices: ServiceItem[] = [
   {
     slug: 'partitions',
     title: 'Partitions',
-    short: 'Room dividers and office partitions in timber—solid, glazed, or mixed.',
+    short: 'Room dividers and office partitions in timber-solid, glazed, or mixed.',
     image: '/images/17-wood-custom.jpg',
     body: [
       'Partitions redefine flow without rebuilding the shell. We fabricate timber dividers, half-walls, and glazed timber screens that feel permanent, not temporary.',
@@ -396,11 +397,11 @@ export const woodServices: ServiceItem[] = [
   {
     slug: 'repair-refinish',
     title: 'Repair & Refinish',
-    short: 'Doors that stick, cabinets that sag, finishes that fade—brought back to use.',
+    short: 'Doors that stick, cabinets that sag, finishes that fade-brought back to use.',
     image: '/images/12-wood-doors.jpg',
     body: [
       'Good timber deserves a second life. We plane sticking doors, rebuild failed joints, replace damaged panels, and refinish surfaces that have gone dull or scratched.',
-      'Often repair is faster and more sustainable than full replacement—especially for solid hardwood pieces.',
+      'Often repair is faster and more sustainable than full replacement-especially for solid hardwood pieces.',
     ],
     covers: ['Door planing & hinge resets', 'Cabinet repairs', 'Veneer patches', 'Full refinishing'],
     materials: ['Matching timber', 'Compatible finish systems'],
@@ -422,7 +423,7 @@ export const processSteps = [
   },
   {
     title: 'Design',
-    text: 'Sketches or drawings with materials, finishes, and hardware. You approve the plan—and the quote—before cutting begins.',
+    text: 'Sketches or drawings with materials, finishes, and hardware. You approve the plan-and the quote-before cutting begins.',
     image: '/images/22-process-design.jpg',
   },
   {
@@ -456,7 +457,7 @@ export const projects = [
     title: 'Dual Bay Workshop Fit',
     trade: 'Workshop',
     summary:
-      'Internal documentation of our own layout—welding bay and timber benches under one roof for coordinated jobs.',
+      'Internal documentation of our own layout-welding bay and timber benches under one roof for coordinated jobs.',
     image: '/images/20-project-3.jpg',
   },
 ]
@@ -468,7 +469,7 @@ export const faqs = [
   },
   {
     q: 'How do I get a quote?',
-    a: 'Use the quote form, WhatsApp, or call. Share opening sizes or invite us for a site measure—accurate dimensions beat guesses.',
+    a: 'Use the quote form, WhatsApp, or call. Share opening sizes or invite us for a site measure-accurate dimensions beat guesses.',
   },
   {
     q: 'What areas do you serve?',
@@ -488,7 +489,7 @@ export const faqs = [
   },
   {
     q: 'Which woods do you commonly use?',
-    a: 'Project-dependent—teak, ash, oak, and quality local hardwoods, plus engineered cores where stability matters more than solid face grain.',
+    a: 'Project-dependent-teak, ash, oak, and quality local hardwoods, plus engineered cores where stability matters more than solid face grain.',
   },
   {
     q: 'Can you work from architect drawings?',
@@ -496,11 +497,11 @@ export const faqs = [
   },
   {
     q: 'Do you charge for a site measure?',
-    a: 'Site visits for quoting are usually folded into the job if you proceed. Distant visits may include a small travel note—confirmed when you book.',
+    a: 'Site visits for quoting are usually folded into the job if you proceed. Distant visits may include a small travel note-confirmed when you book.',
   },
   {
     q: 'Can welding and woodwork run on the same install day?',
-    a: 'Often yes when sequenced correctly—steel frames first, timber hang after. We plan the day so trades do not block each other.',
+    a: 'Often yes when sequenced correctly-steel frames first, timber hang after. We plan the day so trades do not block each other.',
   },
   {
     q: 'What payment terms do you use?',
@@ -517,7 +518,7 @@ export const reviews = [
     name: 'Ahmed R.',
     role: 'Homeowner',
     rating: 5,
-    text: 'Gate and main door arrived as one package. The swing was true on day one—no follow-up hinge drama.',
+    text: 'Gate and main door arrived as one package. The swing was true on day one-no follow-up hinge drama.',
   },
   {
     name: 'Sana K.',

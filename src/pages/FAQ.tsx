@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { faqs } from '../data/site'
@@ -13,7 +13,7 @@ const moreFaqs = [
   },
   {
     q: 'Can you match powder-coat colours?',
-    a: 'Where batch size allows, yes—RAL or sample-matched. Small one-offs may use high-quality enamel systems instead.',
+    a: 'Where batch size allows, yes-RAL or sample-matched. Small one-offs may use high-quality enamel systems instead.',
   },
   {
     q: 'Is on-site welding always possible?',
@@ -39,7 +39,7 @@ export function FAQ() {
       <PageHero
         eyebrow="FAQ"
         title="Straight answers before you book"
-        lead="Timelines, materials, dual-trade coordination, and how quoting works—collected in one place."
+        lead="Timelines, materials, dual-trade coordination, and how quoting works-collected in one place."
         image="/images/02-texture-steel.jpg"
         compact
       />

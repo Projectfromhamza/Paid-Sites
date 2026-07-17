@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { SmartImage } from '../components/SmartImage'
@@ -12,7 +12,7 @@ const extended = [
     title: 'Ornamental Gate Study',
     trade: 'Welding',
     summary:
-      'Scrollwork driveway gate with matching latch detail—powder-coated for outdoor exposure and daily swing cycles.',
+      'Scrollwork driveway gate with matching latch detail-powder-coated for outdoor exposure and daily swing cycles.',
     image: '/images/27-carousel-1.jpg',
   },
   {
@@ -26,7 +26,7 @@ const extended = [
     title: 'Stair Core',
     trade: 'Welding',
     summary:
-      'Open steel staircase stringers prepared for timber treads—rise and run checked before weld-out.',
+      'Open steel staircase stringers prepared for timber treads-rise and run checked before weld-out.',
     image: '/images/29-carousel-3.jpg',
   },
   {
@@ -52,7 +52,7 @@ export function Projects() {
       <PageHero
         eyebrow="Projects"
         title="Work that leaves the bay"
-        lead="A selection of completed and documented jobs—gates beside doors, railings with timber caps, and storage that sits square on uneven floors."
+        lead="A selection of completed and documented jobs-gates beside doors, railings with timber caps, and storage that sits square on uneven floors."
         image="/images/18-project-1.jpg"
       />
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { SmartImage } from '../components/SmartImage'
@@ -24,7 +24,7 @@ export function Process() {
       <PageHero
         eyebrow="Process"
         title="From opening to handover"
-        lead="A clear sequence keeps welding and woodwork aligned—especially when both materials share one site."
+        lead="A clear sequence keeps welding and woodwork aligned-especially when both materials share one site."
         image="/images/23-process-fabricate.jpg"
       />
 
@@ -87,7 +87,7 @@ export function Process() {
             <h2 data-grain>When steel and timber share a deadline</h2>
             <p data-grain>
               Shared measures mean shared calendars. We sequence welding and woodwork so installs
-              do not block each other—gate frames before door hanging, stair steel before tread
+              do not block each other-gate frames before door hanging, stair steel before tread
               fitting, grill interfaces before final window finish.
             </p>
           </div>
@@ -95,7 +95,7 @@ export function Process() {
             <p className="eyebrow">What you provide</p>
             <h2 data-grain>Simple inputs. Precise outputs.</h2>
             <p data-grain>
-              Photos, rough sizes, architect drawings, or a site visit—any of these start the
+              Photos, rough sizes, architect drawings, or a site visit-any of these start the
               process. The more accurate the opening data, the tighter the fabrication and the
               cleaner the install day.
             </p>

@@ -21,7 +21,7 @@ export function Contact() {
       <PageHero
         eyebrow="Contact"
         title="Request a quote or book a measure"
-        lead="Tell us what you need fabricated or repaired. Include sizes or invite us to the site—accuracy starts the job well."
+        lead="Tell us what you need fabricated or repaired. Include sizes or invite us to the site-accuracy starts the job well."
         image="/images/01-hero.jpg"
         compact
       />
@@ -33,6 +33,10 @@ export function Contact() {
             <h2>Visit or write</h2>
             <ul className={styles.metaList}>
               <li>
+                <span>Contact</span>
+                <strong>{site.contactName}</strong>
+              </li>
+              <li>
                 <span>Address</span>
                 <strong>{site.address}</strong>
               </li>
@@ -43,11 +47,16 @@ export function Contact() {
                 </strong>
               </li>
               <li>
-                <span>Email</span>
+                <span>WhatsApp</span>
                 <strong>
-                  <a href={`mailto:${site.email}`}>{site.email}</a>
+                  <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer">{site.phone}</a>
                 </strong>
               </li>
+              <li>
+                <span>City</span>
+                <strong>{site.city}</strong>
+              </li>
+
               <li>
                 <span>Hours</span>
                 <strong>

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { ServicePlate } from '../components/ServicePlate'
@@ -24,7 +24,7 @@ export function WoodworkHub() {
       <PageHero
         eyebrow="Woodwork"
         title="Timber shaped for daily rooms"
-        lead="Doors that swing free, windows that seal, cabinets that stay square—joinery planned for climate, hardware, and how you actually use the space."
+        lead="Doors that swing free, windows that seal, cabinets that stay square-joinery planned for climate, hardware, and how you actually use the space."
         image="/images/12-wood-doors.jpg"
       />
 
@@ -32,7 +32,7 @@ export function WoodworkHub() {
         <div className={`container ${styles.introGrid}`}>
           <div>
             <p className="eyebrow">On the benches</p>
-            <h2 data-grain>Every type of wooden work—done properly.</h2>
+            <h2 data-grain>Every type of wooden work-done properly.</h2>
             <p data-grain>
               We build and install doors, windows, frames, cabinets, wardrobes, furniture, paneling,
               partitions, and custom joinery. Solid hardwood where it matters; engineered cores
@@ -40,7 +40,7 @@ export function WoodworkHub() {
             </p>
             <p data-grain>
               Steel from our welding bay can reinforce long spans, stair structures, and furniture
-              bases—so large timber pieces do not rely on hope alone.
+              bases-so large timber pieces do not rely on hope alone.
             </p>
           </div>
           <aside className={styles.aside}>

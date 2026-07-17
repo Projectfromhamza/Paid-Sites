@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+﻿import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHero } from '../components/PageHero'
 import { SmartImage } from '../components/SmartImage'
@@ -24,7 +24,7 @@ export function About() {
       <PageHero
         eyebrow="About"
         title={`${site.name} workshop`}
-        lead="A dual-trade bay where sparks and sawdust share one roof—built for clients who want steel and timber handled by people who talk to each other."
+        lead="A dual-trade bay where sparks and sawdust share one roof-built for clients who want steel and timber handled by people who talk to each other."
         image="/images/25-about-workshop.jpg"
       />
 
@@ -39,7 +39,7 @@ export function About() {
               one measure, one schedule, one standard of fit.
             </p>
             <p data-grain>
-              We are a workshop-first practice. Drawings matter. So do site realities—uneven
+              We are a workshop-first practice. Drawings matter. So do site realities-uneven
               floors, soft masonry, humidity, and the way a hinge actually carries weight after a
               year of use.
             </p>
@@ -73,7 +73,7 @@ export function About() {
             {[
               {
                 t: 'Measure twice',
-                d: 'Quotes and cut lists follow real dimensions—not catalogue guesses.',
+                d: 'Quotes and cut lists follow real dimensions-not catalogue guesses.',
               },
               {
                 t: 'Finish for climate',
@@ -85,7 +85,7 @@ export function About() {
               },
               {
                 t: 'Honest scope',
-                d: 'If repair is smarter than replace, we say so—and price accordingly.',
+                d: 'If repair is smarter than replace, we say so-and price accordingly.',
               },
             ].map((v) => (
               <article key={v.t} className={styles.value} data-plate>
