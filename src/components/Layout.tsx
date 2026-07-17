@@ -4,6 +4,7 @@ import { Header } from './Header'
 import { Footer } from './Footer'
 import { PageLoader } from './PageLoader'
 import { CustomCursor } from './CustomCursor'
+import { WhatsAppFab } from './WhatsAppFab'
 import { resetMotion, pageEnter, ScrollTrigger } from '../lib/motion'
 import styles from './Layout.module.css'
 
@@ -44,6 +45,7 @@ export function Layout() {
     <div className="page">
       <PageLoader />
       <CustomCursor />
+      <WhatsAppFab />
       <Header />
       <main className={`page-main ${styles.main}`}>
         <div className={styles.stage} ref={stageRef} data-page key={pathname}>

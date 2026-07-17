@@ -1,0 +1,99 @@
+.fab {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem 0.75rem 0.9rem;
+  font-family: var(--font-ui);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35), 0 2px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, background 0.2s ease;
+  animation: fabPop 0.5s cubic-bezier(0.22, 1, 0.36, 1) 1.2s both;
+}
+
+.fab:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5), 0 4px 12px rgba(0,0,0,0.4);
+  background: #22c55e;
+}
+
+.fab:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.fabIcon {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #fff;
+}
+
+.fabLabel {
+  white-space: nowrap;
+}
+
+/* Pulse ring */
+.fab::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid #25d366;
+  animation: fabPulse 2.5s ease-out infinite 2s;
+  pointer-events: none;
+}
+
+@keyframes fabPop {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fabPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .fab {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+
+  .fabLabel {
+    display: none;
+  }
+
+  .fabIcon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}

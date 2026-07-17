@@ -52,6 +52,7 @@ export function Footer() {
           <div className={styles.links}>
             <Link to="/reviews">Reviews</Link>
             <Link to="/process">Process</Link>
+            <Link to="/experience">Experience</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/contact">Contact</Link>
           </div>

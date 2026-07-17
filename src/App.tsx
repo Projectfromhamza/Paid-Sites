@@ -10,6 +10,7 @@ import { About } from './pages/About'
 import { FAQ } from './pages/FAQ'
 import { Contact } from './pages/Contact'
 import { Reviews } from './pages/Reviews'
+import { Experience } from './pages/Experience'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="reviews" element={<Reviews />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="experience" element={<Experience />} />
         </Route>
       </Routes>
     </BrowserRouter>

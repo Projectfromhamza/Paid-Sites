@@ -66,10 +66,6 @@ export function Contact() {
                 </strong>
               </li>
             </ul>
-            <p className={styles.hint}>
-              Replace the map embed below with your Google Maps share link when ready. Placeholder
-              keeps layout intact.
-            </p>
             <div className={styles.map} data-rise>
               <iframe
                 title="Workshop map"

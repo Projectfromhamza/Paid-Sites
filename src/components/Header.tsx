@@ -22,6 +22,7 @@ const drawerLinks: NavItem[] = [
   ...rightLinks,
   { to: '/reviews', label: 'Reviews' },
   { to: '/process', label: 'Process' },
+  { to: '/experience', label: 'Experience' },
   { to: '/faq', label: 'FAQ' },
 ]
 
